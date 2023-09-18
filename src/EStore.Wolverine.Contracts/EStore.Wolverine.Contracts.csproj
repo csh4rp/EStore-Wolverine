@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+      <ProjectReference Include="..\EStore.Wolverine.Domain\EStore.Wolverine.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

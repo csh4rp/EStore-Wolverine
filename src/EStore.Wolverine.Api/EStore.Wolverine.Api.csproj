@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="WolverineFx.EntityFrameworkCore" />
+      <PackageReference Include="WolverineFx.Http" />
+      <PackageReference Include="WolverineFx.Http.FluentValidation" />
+      <PackageReference Include="WolverineFx.RabbitMQ" />
+      <PackageReference Include="WolverineFx.SqlServer" />
+      <PackageReference Include="Swashbuckle.AspNetCore" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\EStore.Wolverine.Application\EStore.Wolverine.Application.csproj" />
+      <ProjectReference Include="..\EStore.Wolverine.Contracts\EStore.Wolverine.Contracts.csproj" />
+      <ProjectReference Include="..\EStore.Wolverine.Infrastructure\EStore.Wolverine.Infrastructure.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Internal\" />
+    </ItemGroup>
+
+</Project>
